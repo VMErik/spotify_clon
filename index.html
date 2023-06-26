@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clon</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12065671ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="profile">
+            <img class="logo" src="./assets/img/spotify-logo.PNG" alt="Logo de spotify">
+            <div class="profile__menu">
+                <ul>
+                    <li><i class="fa-solid fa-house"><span>Inicio</span></i></li>
+                    <li><i class="fas fa-search"><span>Buscar</span></i></li>
+                    <li><i class="fas fa-book-open"><span>Biblioteca</span></i></li>
+                    <li><i class="fa-solid fa-plus"><span>Crear Lista</span></i></li>
+                    <li><i class="fa-solid fa-heart"><span>Tus canciones</span></i></li>
+                </ul>
+            </div>
+
+            <div class="profile__playlists">
+                <ul>
+                    <li>Tus canciones favoritas</li>
+                    <li>Metropolis mix</li>
+                    <li>Mi lista n.º 5</li>
+                    <li>Lofi Christmans</li>
+                    <li>Tus canciones favoritas</li>
+                    <li>Fiesta Chris</li>
+                    <li>Vm Acid</li>
+                    <li>Tus canciones favoritas</li>
+                    <li>Metropolis mix</li>
+                    <li>Mi lista n.º 5</li>
+                </ul>
+            </div>
+            <div class="profile__buttons">
+                <i class="fa-regular fa-circle-down"><span>Instalar app</span></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="home">
+                <div class="home__artist">
+                    <h3>¡ Buenos dias ! </h3>
+                    <div class="artist-card-container">
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/deadmau5.jpeg" alt="">
+                            <p>Deadmau5</p>
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/monolink.jpg" alt="">
+                            <p>Monolink</p>
+                        </div>
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/gorillaz.jpeg" alt="">
+                            <p>Gorillaz</p>
+                        </div>
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/ghost.jpg" alt="">
+                            <p>Ghost</p>
+                        </div>
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/feedme.jpeg" alt="">
+                            <p>FeedMe</p>
+                        </div>
+                        <div class="artist-card">
+                            <img src="./assets/img/covers/amon.jpeg" alt="">
+                            <p>Amon amarth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__recomendation">
+                    <h3>Los podcast mas escuchados</h3>
+                    <div class="recomendation-cards-contianer">
+                        <div class="recomendation-card">
+                            <img src="./assets/img/cadauno_podcast.png" alt="Imagen de la recomendacion">
+                            <h4>Cada uno con su tema</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="recomendation-card">
+                            <img src="./assets/img/cultura_sociedad.png" alt="Imagen de la recomendacion">
+                            <h4>La vida segun</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="recomendation-card">
+                            <img src="./assets/img/dobre_podcast.png" alt="Imagen de la recomendacion">
+                            <h4>Dobre Rano</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="recomendation-card">
+                            <img src="./assets/img/elabierto_podcast.jpg" alt="Imagen de la recomendacion">
+                            <h4>El abierto</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="recomendation-card">
+                            <img src="./assets/img/leyendas_podcast.jpg" alt="Imagen de la recomendacion">
+                            <h4>Leyendas Legendarias</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="recomendation-card">
+                            <img src="./assets/img/psicologia_podcast.jpg" alt="Imagen de la recomendacion">
+                            <h4>Psicologia al desudo</h4>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__play-now">
+                <img src="./assets/img/covers/gorillaz.jpeg" alt="">
+                <div class="play-now-info">
+                    <p>Kids With Guns</p>
+                    <p>Gorillaz</p>
+                </div>
+                <div class="play-now-buttons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+            </div>
+            <div class="footer__play-buttons">
+                <div class="play-buttons-controls">
+                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button><i class="fa-solid fa-backward"></i></button>
+                    <button><i class="fa-regular fa-circle-play"></i></button>
+                    <button><i class="fa-solid fa-forward"></i></button>
+                    <button><i class="fa-solid fa-share-from-square"></i></button>
+                </div>
+                <div class="play-buttons-progress">
+                    <input type="range">
+                </div>
+            </div>
+            <div class="footer__play-controls">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-share-from-square"></i>
+                <i class="fa-sharp fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+:root {
+    --just-white: #fff;
+    --black: #000000;
+    --medium-black: #121212;
+    --black-card: #181818;
+    --gray: #b3b3b3;
+    --black-hover: #272727;
+    --green: #1ed760;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "profile content" "footer footer";
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* profile__menu */
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--gray);
+    background: #000000;
+}
+
+.profile .logo {
+    width: 90%;
+    margin: 0 20px;
+}
+
+.profile span {
+    margin-left: 20px;
+}
+
+.profile__menu {
+    display: grid;
+    margin: 20px 40px;
+}
+
+.profile__menu li {
+    list-style: none;
+}
+
+.profile__menu li:hover {
+    background: var(--black-hover);
+}
+
+.profile__menu i {
+    padding-top: 20px;
+}
+
+.profile__menu ul li:nth-child(1) {
+    color: var(--just-white);
+}
+
+.profile__menu ul li:nth-child(4) {
+    margin-top: 60px;
+}
+
+.profile .profile__playlists {
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.profile__playlists li {
+    width: 90%;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.profile__playlists li:hover {
+    background: var(--black-hover);
+}
+
+.profile__playlists li:nth-child(1) {
+    margin-top: 60px;
+    padding-top: 20px;
+    color: #fff;
+    border-top: 1px solid var(--gray);
+}
+
+.profile__buttons {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+
+/* ****************************************** */
+
+
+/* Home */
+
+.content {
+    grid-area: content;
+    color: var(--just-white);
+    background: #121212;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "artist artist" "recomendation recomendation";
+    height: 100%;
+}
+
+.home__artist {
+    grid-area: artist;
+    background: rgb(3, 11, 1);
+    background: linear-gradient(5deg, rgba(3, 11, 1, 1) 0%, rgba(53, 126, 37, 1) 100%);
+}
+
+.home__artist h3 {
+    margin: 20px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.artist-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.artist-card {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    width: 30%;
+    min-width: 266px;
+    margin: 10px;
+    background: rgba(148, 144, 144, 0.35);
+    border-radius: 10PX;
+}
+
+.artist-card:hover {
+    background: var(--black-hover);
+}
+
+.artist-card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.artist-card p {
+    display: block;
+    width: 60%;
+    font-size: 20px;
+}
+
+.artist-card i {
+    justify-self: flex-end;
+    margin-right: 10px;
+    font-size: 40px;
+    color: var(--green);
+}
+
+.home__recomendation {
+    grid-area: recomendation;
+}
+
+.home__recomendation h3 {
+    font-size: 25px;
+    margin: 20px 20px;
+}
+
+.recomendation-cards-contianer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.recomendation-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background: var(--black-card);
+    border-radius: 10px;
+}
+
+.recomendation-card:hover {
+    background: var(--black-hover);
+}
+
+.recomendation-card>img {
+    align-self: center;
+    width: 80%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.recomendation-card h4 {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.recomendation-card p {
+    margin-left: 20px;
+    color: var(--gray);
+}
+
+
+/* *********************************************** */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    color: var(--just-white);
+    background: #121212;
+    border-top: 1px solid #282828;
+}
+
+.footer__play-now {
+    display: flex;
+    align-items: center;
+}
+
+.footer__play-now img {
+    width: 80px;
+    height: 80px;
+    margin: 5px 20px;
+}
+
+.play-now-info p:nth-child(2) {
+    font-size: 15px;
+    color: var(--gray);
+}
+
+.play-now-buttons {
+    margin-left: 20px;
+}
+
+.play-now-buttons i {
+    margin: 0 5px;
+    color: var(--gray);
+    font-size: 18px;
+}
+
+.play-now-buttons i:hover {
+    color: var(--green);
+}
+
+.footer__play-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.play-buttons-controls button {
+    margin: 15px;
+    font-size: 20px;
+    color: var(--gray);
+    background: var(--medium-black);
+    border: none;
+}
+
+.play-buttons-controls button:hover {
+    color: var(--green);
+}
+
+.play-buttons-progress {
+    align-self: center;
+    display: flex;
+    width: 100%;
+}
+
+.play-buttons-progress input {
+    width: 90%;
+    margin: 0 auto;
+    accent-color: var(--just-white);
+}
+
+.footer__play-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+.footer__play-controls i {
+    color: var(--gray);
+    margin: 0px 10px;
+}
+
+.footer__play-controls i:hover {
+    color: var(--green);
+}
+
+
+/* *********************************************** */
+
+@media (max-width:1200px) {
+    .artist-card {
+        width: 46%;
+    }
+}
+
+@media (max-width:920px) {
+    .artist-card {
+        width: 96%;
+    }
+}
+
+@media (max-width:600px) {
+    .profile {
+        display: none;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "content content" "footer footer";
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer__play-buttons {
+        order: 1;
+        width: 100%;
+    }
+    .footer__play-now {
+        order: 2;
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+        margin: 20px;
+    }
+    .footer__play-controls {
+        order: 3;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
