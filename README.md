@@ -9,5 +9,5 @@ Asi es como se vera nuestro clon visto desde cualquier navegador
 ###Responsive###
 Visualizacion de nuestro sitio visto en cualquier dispositivo movil.
 
-![Responsive1](assets/img/responsive1.PNG.PNG)
-![Responsive2](assets/img/responsive2.PNG.PNG)
+![Responsive1](assets/img/responsive1.PNG)
+![Responsive2](assets/img/responsive2.PNG)
